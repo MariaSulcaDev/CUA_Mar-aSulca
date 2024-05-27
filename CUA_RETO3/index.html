@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Ecológico</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+     <center><h1>Mundo Ecológico</h1></center>
+
+    <center>
+     <h2>Formulario</h2>
+    <form action="" method="">
+        <!-- Campo Nombres y Apellidos -->
+        <label for="nombres">Nombres y Apellidos:</label>
+        <input type="text" id="nombres" name="nombres" pattern="[a-zA-Z ]+" title="Ingrese solo letras y espacios"
+            required>
+        <br><br>
+
+        <!-- Campo Correo Electrónico -->
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}"
+            title="Ingrese un correo electrónico válido" required>
+        <br><br>
+
+        <!-- Campo DNI -->
+        <label for="dni">Numero de DNI:</label>
+        <input type="text" id="dni" name="dni" pattern="[0-9]{8}" title="El DNI debe contener exactamente 8 dígitos"
+            required>
+        <br><br>
+
+          <!-- Campo Fecha de Nacimiento -->
+          <label for="date">Fecha de Nacimiento:</label>
+          <input type="date" value="2017-06-01" />
+          <br><br>
+
+
+          <!--Campo Código postal-->
+          <label for="cod-postal">Código Postal:</label>
+          <input type="text"  pattern="[01000-52999]{5}\d" name="codigoPostal">
+          <br><br>
+
+        <!-- Campo comentario -->
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" title="Ingrese su mensaje" required></textarea>
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    </center>
+
+    <center>
+     <img src="/image/mundo ecologic.avif" alt="MundoEcológico">
+    </center>
+</body>
+
+</html>

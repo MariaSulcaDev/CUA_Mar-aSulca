@@ -1,0 +1,15 @@
+input,
+textarea {
+     padding: 10px;
+     border-radius: 5px;
+     outline: none;
+     font-size: 16px;
+}
+
+.hidden {
+     display: none;
+}
+
+.visible {
+     display: inline;
+}
