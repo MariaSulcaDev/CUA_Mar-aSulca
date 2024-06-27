@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="miFormulario" action="/guardar" method="post">
+             <h2>Formulario de Consulta</h2>
+             <label for="nombres">Nombre Completo:</label>
+             <input type="text" id="nombres" name="nombres" title="Ingrese solo letras"
+                  placeholder="Ingrese sus nombres completos" required>
+
+             <label for="email">Email:</label>
+             <input type="email" id="email" name="email" title="Ingrese bien su correo electronico" placeholder="Ingrese su correo " required>
+
+             <label for="ingreso">fecha de llegada:</label>
+             <input type="text" id="fecha-llegada" name="llegada" placeholder="Ingrese la fecha de llegada" required>
+
+             <label for="salida">Fecha de salida:</label>
+            <input type="text" id="fecha-salida" name="salida" placeholder="Ingrese la fecha de salida" required>
+
+            <label for="habitacion">Tipo de Habitación:</label>
+            <input type="text" id="tipo-habitacion" name="habitacion" placeholder="Seleccione el tipo de habitación: " required>
+            <select name="combo-box" id="">
+                
+            </select>
+
+            <label for="tipo-cama">Preferencias de cama:</label>
+            <input type="text" id="cama-preferencia" name="tipo-cama" placeholder="Seleccione el tipo de cama" required>
+            
+            <label for="comentario">Comentarios adicionales:</label>
+            <textarea id="mensaje" name="comentario" rows="4" maxlength="100" placeholder="Escribe tu comentario">
+                required></textarea>
+
+             <button id="btn_guardar" type="submit">Enviar</button>
+        </form>
+   </div>
+</body>
+</html>
