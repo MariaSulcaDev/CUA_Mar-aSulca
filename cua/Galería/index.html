@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Galería de Imágenes</h1>
+
+        <div class="imagen-contenedor">
+        <div class="imagen"><img src="./img/República de Chile.jpg" alt=""></div>
+        <div class="imagen"><img src="./img/fachadaRPG.jpeg" alt=""></div>
+        <div class="imagen"><img src="./img/Entrada.jpeg" alt=""></div>
+        <div class="imagen"><img src="./img/primavera.jpg" alt=""></div>
+        </div>
+
+        <div class="popup-imagen">
+            <span>&times;</span>
+            <img src="./img/República de Chile.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.imagen-contenedor img').forEach(imagen => {
+            imagen.onclick = () =>{
+                document.querySelectorAll('.popup-imagen').style.display = 'block';
+                document.querySelectorAll('.popup-imagen img').src = imagen.getAttribute('src');
+            }   
+        })
+        document.querySelector('.popup-imagen span').onclick = () =>{
+            document.querySelectorAll('.popup-imagen').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

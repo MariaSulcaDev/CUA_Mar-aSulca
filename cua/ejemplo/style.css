@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+
+html {
+     font-size: 50%;
+}
+
+body {
+     background-color: rgb(74, 114, 109);
+     display: flex;
+     height: 120vh;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     font-family: 'Times New Roman', Times, serif;
+}
+
+.diario {
+     width: 310px;
+     margin: 0 auto;
+     padding: 1rem;
+     border: 2px solid rgb(0, 0, 0);
+     background-color: rgb(255, 255, 255);
+     border-radius: 20px;
+}
+
+.nombre {
+     font-family: "Jersey 25", sans-serif;
+     padding-bottom: 10px;
+     font-size: 1.9rem;
+     text-align: center;
+     border-bottom: 1px solid rgb(0, 0, 0);
+     letter-spacing: 2px;
+}
+
+.fecha {
+     padding: 2px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     font-size: 2.2rem;
+     border-bottom: 1px solid rgb(0, 0, 0);
+     text-transform: uppercase;
+}
+
+
+.titulo {
+     text-transform: uppercase;
+     text-align: center;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 2.3rem;
+}
+
+.noticia {
+     display: flex;
+     gap: 5px;
+}
+
+.lado_izquierdo {
+     width: 50%;
+}
+
+.contenido_izquierdo {
+     display: flex;
+     text-align: justify;
+     gap: 5px;
+}
+
+.contenido_derecho {
+     width: 50%;
+     text-align: justify;
+}
+
+.contenido_izquierdo p, .contenido_derecho p {
+     font-size: 1.8rem;
+}
+
+.image_container {
+     width: 150%;
+}
+
+.image_container img {
+     display: block;
+     width: 100%;
+     padding: 10px;
+}
+
+.image_container p {
+     display: flex;
+     text-align: justify;
+     gap: 5px;
+     padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+     .diario {
+          width: 768px;
+          padding: 25px;
+
+     }
+
+     .nombre {
+          font-size: 5.2rem;
+     }
+
+     .fecha, .fecha p {
+          font-size: 5.5rem;
+     }
+
+     .titulo {
+          font-size: 5.7rem;
+     }
+
+     .contenido_izquierdo {
+          font-size: 2.4rem;
+     }
+
+     .contenido_derecho {
+          font-size: 2.4rem;
+
+     }
+
+     .image_container p {
+          font-size: 2.4rem;
+          padding: 10px;
+     }
+}

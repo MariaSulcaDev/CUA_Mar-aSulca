@@ -1,0 +1,17 @@
+/*Opcion 1: SELECTOR POR ELEMENTO*/
+p{
+    color: aquamarine;
+    font-size: 40px;
+}
+
+/*Opcion 1: SELECTOR POR CLASE*/
+.parrafo{
+    color: aqua;
+    font-size: 26px;
+}
+
+/*Opcion 1: SELECTOR POR ELEMENTO*/
+#texto{
+    color: blueviolet;
+    font-size: 40px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto1</title>
+    <link rel="shortcut icon" href="./img/imagen-música.jpg" type="image/x-icon">
+    <style>
+        body {
+            background-color: rgb(82, 206, 206);
+        }
+
+        .sub-parrafo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .parrafo {
+            gap: 20px;
+            display: flex;
+            padding: 20px;
+        }
+
+        .sub-parrafo p {
+            text-align: justify;
+        }
+
+        .imagenes {
+            display: flex;
+            max-width: fit-content;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .imagenes img {
+            width: 30%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .calendario {
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>Melodías Creativas</h1>
+        <div class="imagenes">
+            <img src="./img/canto.jpg" alt="">
+            <img src="./img/imagen-música.jpg" alt="">
+            <img src="./img/piano.jpg" alt="">
+        </div>
+    </div>+
+    <div class="parrafo">
+        <div class="sub-parrafo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic modi possimus aliquam maiores nihil
+                pariatur, eligendi excepturi repudiandae. Quia odit repellendus, cumque non tempora perferendis nesciunt
+                eum numquam quasi amet valle grande.</p>
+            <a href="https://vallegrande.edu.pe/" target="_blank">VER MÁS</a>
+        </div>
+
+        <div class="sub-parrafo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic modi possimus aliquam maiores nihil
+                pariatur, eligendi excepturi repudiandae. Quia odit repellendus, cumque non tempora perferendis nesciunt
+                eum numquam quasi amet.</p>
+            <a href="https://youtu.be/5dtP6Utwk8I">VER MÁS</a>
+
+
+        </div>
+    </div>
+    <div class="calendario">
+        <form action="">
+            <label for="start">Calendario:</label>
+
+            <input type="date" id="start" name="fecha" min="2024-01-01" max="2024-12-31" />
+            <button type="submit">enviar</button>
+        </form>
+
+        <ul>
+
+            <li>Curso de canto</li>
+            <li>Curso de música</li>
+            <li>Curso de Piano</li>
+            <li>Curso de vocalización</li>
+            <li>Curso de melodía</li>
+        </ul>
+    </div>
+</body>
+
+</html>
